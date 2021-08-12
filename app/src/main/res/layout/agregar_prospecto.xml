@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ProspectoActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="100px" >
+
+            <TextView
+                android:id="@+id/nombre"
+                android:layout_width="match_parent"
+                android:layout_height="50px"
+                android:text="Nombre"
+                android:textStyle="bold"/>
+
+            <EditText
+                android:id="@+id/txtnombre"
+                android:layout_width="match_parent"
+                android:layout_height="60dp" />
+
+            <TextView
+                android:id="@+id/apellido_p"
+                android:layout_width="match_parent"
+                android:layout_height="50px"
+                android:text="Apellido Paterno"
+                android:textStyle="bold"/>
+
+            <EditText
+                android:id="@+id/txtapellido_p"
+                android:layout_width="match_parent"
+                android:layout_height="60dp" />
+            <TextView
+                android:id="@+id/apellido_m"
+                android:layout_width="match_parent"
+                android:layout_height="50px"
+                android:text="Apellido Materno"
+                android:textStyle="bold"/>
+
+            <EditText
+                android:id="@+id/txtapellido_m"
+                android:layout_width="match_parent"
+                android:layout_height="60dp" />
+            <TextView
+                android:id="@+id/calle"
+                android:layout_width="match_parent"
+                android:layout_height="50px"
+                android:text="Calle"
+                android:textStyle="bold"/>
+
+            <EditText
+                android:id="@+id/txtcalle"
+                android:layout_width="match_parent"
+                android:layout_height="60dp" />
+            <TextView
+                android:id="@+id/colonia"
+                android:layout_width="match_parent"
+                android:layout_height="50px"
+                android:text="Colonia"
+                android:textStyle="bold"/>
+
+            <EditText
+                android:id="@+id/txtcolonia"
+                android:layout_width="match_parent"
+                android:layout_height="60dp" />
+            <TextView
+                android:id="@+id/numero"
+                android:layout_width="match_parent"
+                android:layout_height="50px"
+                android:text="Numero"
+                android:textStyle="bold"/>
+
+            <EditText
+                android:id="@+id/txtnumero"
+                android:inputType="number"
+                android:layout_width="match_parent"
+                android:layout_height="60dp" />
+            <TextView
+                android:id="@+id/codigo_postal"
+
+                android:layout_width="match_parent"
+                android:layout_height="50px"
+                android:text="Codigo Postal"
+                android:textStyle="bold"/>
+
+            <EditText
+                android:id="@+id/txtcodigo_postal"
+                android:inputType="number"
+                android:layout_width="match_parent"
+                android:layout_height="60dp" />
+            <TextView
+                android:id="@+id/telefono"
+                android:layout_width="match_parent"
+                android:layout_height="50px"
+                android:text="Teléfono"
+                android:textStyle="bold"/>
+
+            <EditText
+                android:id="@+id/txttelefono"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:inputType="phone" />
+
+            <TextView
+                android:id="@+id/rfc"
+                android:layout_width="match_parent"
+                android:layout_height="50px"
+                android:text="RFC"
+                android:textStyle="bold"/>
+
+            <EditText
+                android:id="@+id/txtrfc"
+                android:layout_width="match_parent"
+                android:layout_height="60dp" />
+
+            <TextView
+                android:id="@+id/documentos"
+                android:layout_width="match_parent"
+                android:layout_height="50px"
+                android:text="Documentos"
+                android:textStyle="bold"/>
+
+
+
+            <Button
+                android:id="@+id/button_add3"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="10dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:text="Seleccionar documento"
+                android:textAllCaps="false"
+                android:textColor="#000000" />
+
+            <TextView
+                android:id="@+id/agregar"
+                android:layout_width="match_parent"
+                android:layout_height="50px"
+                android:text="Nombre del documento"
+                android:textStyle="bold"/>
+            <EditText
+                android:id="@+id/txtdocumentos"
+                android:layout_width="match_parent"
+                android:layout_height="60dp" />
+
+
+            <Button
+                android:id="@+id/button_add"
+                android:layout_width="337dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="10dp"
+                android:drawableStart="@drawable/icon_add"
+                android:paddingLeft="10dp"
+                android:text="AGREGAR DOCUMENTO"
+                android:paddingRight="10dp"
+                android:textAllCaps="false"
+                android:textColor="#000000"
+                android:drawableLeft="@drawable/icon_add" />
+
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <ListView
+                        android:id="@+id/listViewId"
+                        android:layout_width="match_parent"
+                        android:layout_height="73dp" />
+                </RelativeLayout>
+            </ScrollView>
+
+
+            <Button
+                android:id="@+id/btnGuardar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="GUARDAR" />
+
+            <Button
+                android:id="@+id/btnVolver"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="VOLVER" />
+
+        </LinearLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

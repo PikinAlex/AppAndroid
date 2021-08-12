@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Prospectos</string>
+    <string name="action_settings">Settings</string>
+    <string-array name="valuesAgregarProspecto">
+        <item>Enviado</item>
+    </string-array>
+    <string-array name="valuesEditarProspecto">
+        <item>Aprobado</item>
+        <item>Rechazado</item>
+    </string-array>
+</resources>
